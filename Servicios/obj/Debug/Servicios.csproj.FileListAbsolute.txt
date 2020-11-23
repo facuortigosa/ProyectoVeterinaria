@@ -1,0 +1,12 @@
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\obj\Debug\Servicios.csprojAssemblyReference.cache
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\bin\Debug\Servicios.dll
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\bin\Debug\Servicios.pdb
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\bin\Debug\Entidades.dll
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\bin\Debug\ProyectoVeterinaria.dll
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\bin\Debug\Entidades.pdb
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\bin\Debug\ProyectoVeterinaria.pdb
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\bin\Debug\ProyectoVeterinaria.dll.config
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\obj\Debug\Servicios.csproj.CopyComplete
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\obj\Debug\Servicios.dll
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Servicios\obj\Debug\Servicios.pdb

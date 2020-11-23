@@ -1,0 +1,7 @@
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\ProyectoVeterinaria\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\ProyectoVeterinaria\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\ProyectoVeterinaria\bin\Debug\ProyectoVeterinaria.dll.config
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\ProyectoVeterinaria\bin\Debug\ProyectoVeterinaria.dll
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\ProyectoVeterinaria\bin\Debug\ProyectoVeterinaria.pdb
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\ProyectoVeterinaria\obj\Debug\ProyectoVeterinaria.dll
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\ProyectoVeterinaria\obj\Debug\ProyectoVeterinaria.pdb
