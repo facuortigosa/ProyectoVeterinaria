@@ -1,4 +1,6 @@
-﻿using Entidades;
+﻿
+using Entidades;
+using Entidades.Repositorios;
 using ProyectoVeterinaria;
 using System;
 using System.Collections.Generic;
@@ -10,15 +12,15 @@ namespace Servicios
 {
     public class ServicioProvincias
     {
-        private ConexionBd conexion;
+        private ConexionBd cxn;
         private RepositorioProvincias repositorio;
 
         public ServicioProvincias()
         {
             try
             {
-                conexion = new ConexionBd();
-                repositorio = new RepositorioProvincias(conexion.AbrirConexion());
+                cxn = new ConexionBd();
+                repositorio = new RepositorioProvincias(cxn.AbrirConexion());
             }
             catch (Exception e)
             {
@@ -30,10 +32,10 @@ namespace Servicios
         {
             try
             {
-                conexion = new ConexionBd();
-                repositorio = new RepositorioProvincias(conexion.AbrirConexion());
+                cxn = new ConexionBd();
+                repositorio = new RepositorioProvincias(cxn.AbrirConexion());
                 var lista = repositorio.GetLista();
-                conexion.CerrarConexion();
+                cxn.CerrarConexion();
                 return lista;
             }
             catch (Exception e)
@@ -47,10 +49,10 @@ namespace Servicios
         {
             try
             {
-                conexion = new ConexionBd();
-                repositorio = new RepositorioProvincias(conexion.AbrirConexion());
+                cxn = new ConexionBd();
+                repositorio = new RepositorioProvincias(cxn.AbrirConexion());
                 repositorio.Agregar(provincia);
-                conexion.CerrarConexion();
+                cxn.CerrarConexion();
 
             }
             catch (Exception e)
@@ -64,10 +66,10 @@ namespace Servicios
         {
             try
             {
-                conexion = new ConexionBd();
-                repositorio = new RepositorioProvincias(conexion.AbrirConexion());
+                cxn = new ConexionBd();
+                repositorio = new RepositorioProvincias(cxn.AbrirConexion());
                 var existe = repositorio.Existe(provincia);
-                conexion.CerrarConexion();
+                cxn.CerrarConexion();
                 return existe;
             }
             catch (Exception e)
@@ -81,10 +83,10 @@ namespace Servicios
         {
             try
             {
-                conexion = new ConexionBd();
-                repositorio = new RepositorioProvincias(conexion.AbrirConexion());
+                cxn = new ConexionBd();
+                repositorio = new RepositorioProvincias(cxn.AbrirConexion());
                 repositorio.Borrar(provincia);
-                conexion.CerrarConexion();
+                cxn.CerrarConexion();
 
             }
             catch (Exception e)
@@ -98,10 +100,10 @@ namespace Servicios
         {
             try
             {
-                conexion = new ConexionBd();
-                repositorio = new RepositorioProvincias(conexion.AbrirConexion());
+                cxn = new ConexionBd();
+                repositorio = new RepositorioProvincias(cxn.AbrirConexion());
                 repositorio.Guardar(provincia);
-                conexion.CerrarConexion();
+                cxn.CerrarConexion();
 
             }
             catch (Exception e)
@@ -115,10 +117,10 @@ namespace Servicios
         {
             try
             {
-                conexion = new ConexionBd();
-                repositorio = new RepositorioProvincias(conexion.AbrirConexion());
+                cxn = new ConexionBd();
+                repositorio = new RepositorioProvincias(cxn.AbrirConexion());
                 var relacionado = repositorio.EstaRelacionado(provincia);
-                conexion.CerrarConexion();
+                cxn.CerrarConexion();
                 return relacionado;
             }
             catch (Exception e)

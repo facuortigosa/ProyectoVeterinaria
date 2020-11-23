@@ -187,5 +187,10 @@ namespace Windows
                 }
             }
         }
+
+        private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

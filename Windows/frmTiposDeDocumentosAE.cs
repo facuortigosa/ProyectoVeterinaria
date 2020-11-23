@@ -94,5 +94,20 @@ namespace Windows
         {
             DialogResult = DialogResult.Cancel;
         }
+
+        private void TipoDeDocumentoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmTiposDeDocumentosAE_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

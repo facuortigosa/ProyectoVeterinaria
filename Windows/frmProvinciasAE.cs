@@ -59,5 +59,13 @@ namespace Windows
             this.provincia = provincia;
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            if (provincia != null)
+            {
+                ProvinciaTextBox.Text = provincia.NombreProvincia;
+            }
+        }
     }
 }

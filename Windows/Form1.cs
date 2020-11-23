@@ -33,5 +33,17 @@ namespace Windows
             frmTiposDeDocumentos frma = new frmTiposDeDocumentos();
             frma.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmLocalidades frml = new frmLocalidades();
+            frml.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmProvincias frmp = new frmProvincias();
+            frmp.Show();
+        }
     }
 }

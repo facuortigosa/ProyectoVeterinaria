@@ -52,6 +52,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFormaFarmaceutica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormaFarmaceutica.Designer.cs">
+      <DependentUpon>frmFormaFarmaceutica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormaFarmaceuticaAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormaFarmaceuticaAE.Designer.cs">
+      <DependentUpon>frmFormaFarmaceuticaAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidades.Designer.cs">
+      <DependentUpon>frmLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidadesAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidadesAE.Designer.cs">
+      <DependentUpon>frmLocalidadesAE.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProvincias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +116,18 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormaFarmaceutica.resx">
+      <DependentUpon>frmFormaFarmaceutica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormaFarmaceuticaAE.resx">
+      <DependentUpon>frmFormaFarmaceuticaAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidades.resx">
+      <DependentUpon>frmLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidadesAE.resx">
+      <DependentUpon>frmLocalidadesAE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProvincias.resx">
       <DependentUpon>frmProvincias.cs</DependentUpon>

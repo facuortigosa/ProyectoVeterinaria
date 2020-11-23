@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace Entidades.Repositorios
 {
     public class RepositorioLocalidades
     {
@@ -50,7 +50,7 @@ namespace Entidades
             {
                 LocalidadID = reader.GetInt32(0),
                 NombreLocalidad = reader.GetString(1),
-                ProvinciaID =reader.GetInt32(3)
+                ProvinciaID =reader.GetInt32(2)
 
             };
         }

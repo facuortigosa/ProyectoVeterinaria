@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.TipoDeDocumentoTextBox = new System.Windows.Forms.TextBox();
-            this.Okbtn = new System.Windows.Forms.Button();
-            this.Cancelarbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Cancelarbtn = new System.Windows.Forms.Button();
+            this.Okbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,18 +43,21 @@
             this.TipoDeDocumentoTextBox.Name = "TipoDeDocumentoTextBox";
             this.TipoDeDocumentoTextBox.Size = new System.Drawing.Size(157, 20);
             this.TipoDeDocumentoTextBox.TabIndex = 1;
+            this.TipoDeDocumentoTextBox.TextChanged += new System.EventHandler(this.TipoDeDocumentoTextBox_TextChanged);
             // 
-            // Okbtn
+            // label1
             // 
-            this.Okbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Okbtn.Image = global::Windows.Properties.Resources.checked_80px;
-            this.Okbtn.Location = new System.Drawing.Point(68, 196);
-            this.Okbtn.Name = "Okbtn";
-            this.Okbtn.Size = new System.Drawing.Size(106, 84);
-            this.Okbtn.TabIndex = 3;
-            this.Okbtn.Text = "OK";
-            this.Okbtn.UseVisualStyleBackColor = false;
-            this.Okbtn.Click += new System.EventHandler(this.Okbtn_Click_1);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(91, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Tipo de Documento:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Cancelarbtn
             // 
@@ -69,18 +72,17 @@
             this.Cancelarbtn.UseVisualStyleBackColor = false;
             this.Cancelarbtn.Click += new System.EventHandler(this.Cancelarbtn_Click_1);
             // 
-            // label1
+            // Okbtn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(91, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Tipo de Documento:";
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
+            this.Okbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Okbtn.Image = global::Windows.Properties.Resources.checked_80px;
+            this.Okbtn.Location = new System.Drawing.Point(68, 196);
+            this.Okbtn.Name = "Okbtn";
+            this.Okbtn.Size = new System.Drawing.Size(106, 84);
+            this.Okbtn.TabIndex = 3;
+            this.Okbtn.Text = "OK";
+            this.Okbtn.UseVisualStyleBackColor = false;
+            this.Okbtn.Click += new System.EventHandler(this.Okbtn_Click_1);
             // 
             // frmTiposDeDocumentosAE
             // 
@@ -94,6 +96,7 @@
             this.Controls.Add(this.TipoDeDocumentoTextBox);
             this.Name = "frmTiposDeDocumentosAE";
             this.Text = "frmTiposDeDocumentosAE";
+            this.Load += new System.EventHandler(this.frmTiposDeDocumentosAE_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

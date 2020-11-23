@@ -18,22 +18,11 @@ namespace Windows
         {
             InitializeComponent();
         }
-        private ServicioProvincias servicio;
+        private ServicioProvincias servicioProvincia;
         private List<Provincias> lista;
 
-        private void frmTiposDeDocumentos_Load(object sender, EventArgs e)
+        private void frmProvincias_Load(object sender, EventArgs e)
         {
-            try
-            {
-                servicio = new ServicioProvincias();
-                lista = servicio.GetLista();
-                MostrarDatosEnGrilla();
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
         }
         private void MostrarDatosEnGrilla()
         {
@@ -79,12 +68,12 @@ namespace Windows
             {
                 try
                 {
-                    Provincias provincia = frm.GetProvincia();
-                    if (!servicio.Existe(provincia))
+                    Provincias provincia1 = frm.GetProvincia();
+                    if (!servicioProvincia.Existe(provincia1))
                     {
-                        servicio.Agregar(provincia);
+                        servicioProvincia.Agregar(provincia1);
                         var r = ConstruirFila();
-                        SetearFila(r, provincia);
+                        SetearFila(r, provincia1);
                         AgregarFila(r);
                         MessageBox.Show("Provincia agregada", "Mensaje",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -124,9 +113,9 @@ namespace Windows
                     try
                     {
                         provincia = frm.GetProvincia();
-                        if (!servicio.Existe(provincia))
+                        if (!servicioProvincia.Existe(provincia))
                         {
-                            servicio.Guardar(provincia);
+                            servicioProvincia.Guardar(provincia);
                             SetearFila(r, provincia);
                             MessageBox.Show("Provincia Editada", "Mensaje",
                             MessageBoxButtons.OK,
@@ -163,17 +152,17 @@ namespace Windows
                 {
                     try
                     {
-                        if (!servicio.EstaRelacionado(provincia))
+                        if (!servicioProvincia.EstaRelacionado(provincia))
                         {
-                            servicio.Borrar(provincia);
+                            servicioProvincia.Borrar(provincia);
                             dgvDatos.Rows.Remove(r);
-                            MessageBox.Show("Tipo de documento Borrado", "Mensaje",
+                            MessageBox.Show("Provincia Borrada", "Mensaje",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("Tipo de documento con registros asociados \nBaja Denegada", "Error",
+                            MessageBox.Show("Provincia con registros asociados \nBaja Denegada", "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                         }
@@ -185,6 +174,32 @@ namespace Windows
 
                     }
                 }
+            }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmProvincias_Load_1(object sender, EventArgs e)
+        {
+
+            try
+            {
+                servicioProvincia = new ServicioProvincias();
+                lista = servicioProvincia.GetLista();
+                MostrarDatosEnGrilla();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
             }
         }
     }

@@ -6,33 +6,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace Entidades.Repositorios
 {
-    public class RepositorioProvincias
+    public class RepositorioFormaFarmaceutica
     {
         private readonly SqlConnection cn;
 
 
-        public RepositorioProvincias(SqlConnection cn)
+        public RepositorioFormaFarmaceutica(SqlConnection cn)
         {
             this.cn = cn;
 
         }
 
 
-        public List<Provincias> GetLista()
+        public List<FormaFarmaceutica> GetLista()
         {
             try
             {
-                List<Provincias> lista = new List<Provincias>();
-                string cadenaComando = "SELECT ProvinciaID, NombreProvincia FROM Provincias";
+                List<FormaFarmaceutica> lista = new List<FormaFarmaceutica>();
+                string cadenaComando = "SELECT FormaFarmaceuticaID, Descripcion FROM FormasFarmaceuticas";
                 var comando = new SqlCommand(cadenaComando, cn);
 
                 var reader = comando.ExecuteReader();
                 while (reader.Read())
                 {
-                    Provincias provincia = ConstruirProvincia(reader);
-                    lista.Add(provincia);
+                    FormaFarmaceutica forma = ConstruirForma(reader);
+                    lista.Add(forma);
                 }
                 reader.Close();
                 return lista;
@@ -44,28 +44,28 @@ namespace Entidades
             }
         }
 
-        private Provincias ConstruirProvincia(SqlDataReader reader)
+        private FormaFarmaceutica ConstruirForma(SqlDataReader reader)
         {
-            return new Provincias
+            return new FormaFarmaceutica
             {
-                ProvinciaID = reader.GetInt32(0),
-                NombreProvincia = reader.GetString(1)
+                FormaFarmaceuticaID = reader.GetInt32(0),
+                Descripcion = reader.GetString(1)
 
             };
         }
 
-        public void Agregar(Provincias provincia)
+        public void Agregar(FormaFarmaceutica forma)
         {
             try
             {
-                string cadenaComando = "INSERT INTO Provincias VALUES (@nombre)";
+                string cadenaComando = "INSERT INTO FormasFarmaceuticas VALUES (@forma)";
                 SqlCommand comando = new SqlCommand(cadenaComando, cn);
-                comando.Parameters.AddWithValue("@nombre", provincia.NombreProvincia);
+                comando.Parameters.AddWithValue("@forma", forma.Descripcion);
                 comando.ExecuteNonQuery();
                 cadenaComando = "SELECT @@Identity";
                 comando = new SqlCommand(cadenaComando, cn);
                 int id = (int)(decimal)comando.ExecuteScalar();
-                provincia.ProvinciaID = id;
+                forma.FormaFarmaceuticaID = id;
             }
             catch (Exception e)
             {
@@ -74,13 +74,13 @@ namespace Entidades
             }
         }
 
-        public bool Existe(Provincias provincia)
+        public bool Existe(FormaFarmaceutica forma)
         {
             try
             {
-                var cadenaComando = "SELECT ProvinciaID, NombreProvincia FROM Provincias WHERE NombreProvincia=@nombre";
+                var cadenaComando = "SELECT FormaFarmaceuticaID, Descripcion FROM FormasFarmaceuticas WHERE Descripcion=@nombre";
                 var comando = new SqlCommand(cadenaComando, cn);
-                comando.Parameters.AddWithValue("@nombre", provincia.NombreProvincia);
+                comando.Parameters.AddWithValue("@nombre", forma.Descripcion);
                 var reader = comando.ExecuteReader();
                 return reader.HasRows;
 
@@ -94,13 +94,13 @@ namespace Entidades
         }
 
 
-        public void Borrar(Provincias provincia)
+        public void Borrar(FormaFarmaceutica forma)
         {
             try
             {
-                string cadenaComando = "DELETE FROM Provincias WHERE ProvinciaID=@id";
+                string cadenaComando = "DELETE FROM FormasFarmaceuticas WHERE FormaFarmaceuticaID=@id";
                 SqlCommand comando = new SqlCommand(cadenaComando, cn);
-                comando.Parameters.AddWithValue("@id", provincia.ProvinciaID);
+                comando.Parameters.AddWithValue("@id", forma.FormaFarmaceuticaID);
                 comando.ExecuteNonQuery();
 
             }
@@ -111,23 +111,23 @@ namespace Entidades
         }
 
 
-        public Provincias GetProvinciaPorId(int id)
+        public FormaFarmaceutica GetFormaPorId(int id)
         {
             try
             {
-                Provincias provincia = null;
-                string cadenaComando = "SELECT ProvinciaID, NombreProvincia FROM Provincias WHERE ProvinciaID=@id";
+                FormaFarmaceutica forma = null;
+                string cadenaComando = "SELECT FormaFarmaceuticaID, Descripcion FROM FormasFarmaceuticas WHERE FormaFarmaceuticaID=@id";
                 SqlCommand comando = new SqlCommand(cadenaComando, cn);
                 comando.Parameters.AddWithValue("id", id);
                 SqlDataReader reader = comando.ExecuteReader();
                 if (reader.HasRows)
                 {
                     reader.Read();
-                    provincia = ConstruirProvincia(reader);
+                    forma = ConstruirForma(reader);
 
                 }
                 reader.Close();
-                return provincia;
+                return forma;
             }
             catch (Exception e)
             {
@@ -137,20 +137,20 @@ namespace Entidades
 
         }
 
-        public void Guardar(Provincias provincia)
+        public void Guardar(FormaFarmaceutica forma)
         {
-            if (provincia.ProvinciaID == 0)
+            if (forma.FormaFarmaceuticaID == 0)
             {
                 try
                 {
-                    string cadenaComando = "INSERT INTO Provincias VALUES (@nombre)";
+                    string cadenaComando = "INSERT INTO FormasFarmaceuticas VALUES (@forma)";
                     SqlCommand comando = new SqlCommand(cadenaComando, cn);
-                    comando.Parameters.AddWithValue("@nombre", provincia.NombreProvincia);
+                    comando.Parameters.AddWithValue("@forma", forma.Descripcion);
                     comando.ExecuteNonQuery();
                     cadenaComando = "SELECT @@IDENTITY";
                     comando = new SqlCommand(cadenaComando, cn);
                     int id = (int)(decimal)comando.ExecuteScalar();
-                    provincia.ProvinciaID = id;
+                    forma.FormaFarmaceuticaID = id;
                 }
                 catch (Exception e)
                 {
@@ -164,10 +164,10 @@ namespace Entidades
 
                 try
                 {
-                    string cadenaComando = "UPDATE Provincias SET NombreProvincias=@nombre WHERE ProvinciaID=@id";
+                    string cadenaComando = "UPDATE FormasFarmaceuticas SET Descripcion=@desc WHERE FormaFarmaceuticaID=@id";
                     SqlCommand comando = new SqlCommand(cadenaComando, cn);
-                    comando.Parameters.AddWithValue("@nombre", provincia.NombreProvincia);
-                    comando.Parameters.AddWithValue("@id", provincia.ProvinciaID);
+                    comando.Parameters.AddWithValue("@desc", forma.Descripcion);
+                    comando.Parameters.AddWithValue("@id", forma.FormaFarmaceuticaID);
                     comando.ExecuteNonQuery();
 
                 }
@@ -179,13 +179,13 @@ namespace Entidades
             }
         }
 
-        public bool EstaRelacionado(Provincias provincia)
+        public bool EstaRelacionado(FormaFarmaceutica forma)
         {
             try
             {
-                var cadenaComando = "SELECT COUNT(*) FROM Clientes WHERE ProvinciaID=@id";
+                var cadenaComando = "SELECT COUNT(*) FROM Medicamentos WHERE FormaFarmaceuticaID=@id";
                 var comando = new SqlCommand(cadenaComando, cn);
-                comando.Parameters.AddWithValue("@id", provincia.ProvinciaID);
+                comando.Parameters.AddWithValue("@id", forma.FormaFarmaceuticaID);
                 int cantidadRegistros = (int)comando.ExecuteScalar();
                 if (cantidadRegistros > 0)
                 {
