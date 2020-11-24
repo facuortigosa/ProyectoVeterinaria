@@ -118,82 +118,97 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="syringe_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="veterinarian_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veterinarian_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dog_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dog_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="veterinario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veterinario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="veterinarian_male_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veterinarian_male_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pills_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pills_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hospital_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hospital_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editarae" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editarae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pets_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pets_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checked_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medicamentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medicamentos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pills_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pills_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="doctors_bag_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\doctors_bag_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dose_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dose_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tipodemascotas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tipodemascotas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="veterinarian_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veterinarian_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_hospital_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_hospital_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nuevoae1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nuevoae1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="veterinario michi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veterinario michi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hospital_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hospital_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="animal_shelter_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\animal_shelter_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="veterinarian_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\veterinarian_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_hospital_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_hospital_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="veterinario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veterinario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="borrarae" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\borrarae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doctors_bag_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doctors_bag_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="animal_shelter_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animal_shelter_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dog_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doctors_bag_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doctors_bag_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dose_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dose_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tipodemascotas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipodemascotas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nuevoae" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nuevoae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="veterinario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\veterinario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="veterinario michi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\veterinario michi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_hospital_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_hospital_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syringe_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pets_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dose_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dose_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="animal_shelter_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animal_shelter_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="veterinario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\veterinario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevoae1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevoae1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="veterinarian_male_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\veterinarian_male_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medicamentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medicamentos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="veterinarian_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\veterinarian_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cancel_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="checked_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checked_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dog_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pills_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pills_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

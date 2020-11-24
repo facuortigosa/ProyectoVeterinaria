@@ -51,5 +51,17 @@ namespace Windows
             frmFormaFarmaceutica frmf = new frmFormaFarmaceutica();
             frmf.Show();
         }
+
+        private void TiposDeMascotatsb_Click(object sender, EventArgs e)
+        {
+            frmTipoDeMascota frmm = new frmTipoDeMascota();
+            frmm.Show();
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            frmTiposDeMedicamentos frmtm = new frmTiposDeMedicamentos();
+            frmtm.Show();
+        }
     }
 }

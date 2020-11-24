@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmFormaFarmaceutica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +94,18 @@
     <Compile Include="frmTiposDeDocumentosAE.Designer.cs">
       <DependentUpon>frmTiposDeDocumentosAE.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTiposDeMedicamentoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiposDeMedicamentoAE.Designer.cs">
+      <DependentUpon>frmTiposDeMedicamentoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiposDeMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiposDeMedicamentos.Designer.cs">
+      <DependentUpon>frmTiposDeMedicamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmTipoDeMascota.cs">
@@ -114,9 +120,12 @@
     <Compile Include="frmTipoDeMascotaAE.Designer.cs">
       <DependentUpon>frmTipoDeMascotaAE.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Resources\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
     <EmbeddedResource Include="frmFormaFarmaceutica.resx">
       <DependentUpon>frmFormaFarmaceutica.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +153,9 @@
     <EmbeddedResource Include="frmTiposDeDocumentosAE.resx">
       <DependentUpon>frmTiposDeDocumentosAE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTiposDeMedicamentos.resx">
+      <DependentUpon>frmTiposDeMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -156,6 +168,9 @@
     </Compile>
     <EmbeddedResource Include="frmTipoDeMascota.resx">
       <DependentUpon>frmTipoDeMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -257,6 +272,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\checked_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dose_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_shelter_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctors_bag_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills_48px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,6 +43,7 @@
     <Compile Include="Localidades.cs" />
     <Compile Include="Provincias.cs" />
     <Compile Include="TipoDeMascota.cs" />
+    <Compile Include="TipoDeMedicamento.cs" />
     <Compile Include="TiposDeDocumentos.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

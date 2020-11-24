@@ -26,3 +26,4 @@ C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Windows\obj\Debug\Windows.frmLo
 C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Windows\obj\Debug\Windows.frmLocalidadesAE.resources
 C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Windows\obj\Debug\Windows.frmFormaFarmaceutica.resources
 C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Windows\obj\Debug\Windows.frmFormaFarmaceuticaAE.resources
+C:\Users\PC - 1\source\repos\ProyectoVeterinaria\Windows\obj\Debug\Windows.frmTiposDeMedicamentos.resources

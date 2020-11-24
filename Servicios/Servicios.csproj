@@ -47,6 +47,7 @@
     <Compile Include="ServicioProvincias.cs" />
     <Compile Include="ServicioTipoDeMascota.cs" />
     <Compile Include="ServicioTiposDeDocumentos.cs" />
+    <Compile Include="ServicioTiposDeMedicamentos.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

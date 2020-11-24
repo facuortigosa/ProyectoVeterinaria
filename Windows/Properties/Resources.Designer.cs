@@ -63,6 +63,16 @@ namespace Windows.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap animal_shelter_48px {
+            get {
+                object obj = ResourceManager.GetObject("animal_shelter_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap animal_shelter_50px {
             get {
                 object obj = ResourceManager.GetObject("animal_shelter_50px", resourceCulture);
@@ -123,9 +133,39 @@ namespace Windows.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doctors_bag_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("doctors_bag_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dog_48px {
             get {
                 object obj = ResourceManager.GetObject("dog_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dog_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("dog_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dose_48px {
+            get {
+                object obj = ResourceManager.GetObject("dose_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +276,16 @@ namespace Windows.Properties {
         internal static System.Drawing.Bitmap pills_48px {
             get {
                 object obj = ResourceManager.GetObject("pills_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pills_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("pills_48px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
